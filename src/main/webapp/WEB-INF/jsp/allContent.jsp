@@ -10,6 +10,7 @@
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<a href="" style="text-align: right">退出</a>
 <div class="container" style="text-align: center">
     <div class="row clearfix">
         <div class="col-md-12 column">
@@ -54,7 +55,7 @@
                 <tbody>
                 <c:forEach var="content" items="${requestScope.get('list')}" varStatus="status">
                         <td>${content.contentId}</td>
-                        <td><img src="https://m1.miaomc.cn/uploads/20230328_6422ffb3677a4.jpg" width="100"></td>
+                        <td><img src="https://m1.miaomc.cn/uploads/20230519_646749c469668.png" width="100"></td>
                         <td>${content.contentName}</td>
                         <td>${content.contentHours}</td>
                         <td>${content.contentSid}</td>

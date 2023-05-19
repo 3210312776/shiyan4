@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String path = request.getContextPath();
@@ -37,13 +38,13 @@
             </div>
         </div>
     </div>
-    <form action="/upload" method="post" enctype="multipart/form-data">
+    <form:form action="user/upload" method="post" enctype="multipart/form-data" >
         课程名称：<input type="text" name="contentName"><br><br><br>
         课程时间：<input type="text" name="contentHours"><br><br><br>
         所教学院：<input type="text" name="contentSid"><br><br><br>
         封面: <input type="text" name="picPath"><input type="file" name="file" value="请选择图片" ><br><br><br>
         <input type="button" value="添加" onclick="addContent()">
-    </form>
+    </form:form>
 
     <script type="text/javascript">
         function addContent() {

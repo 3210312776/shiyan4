@@ -12,6 +12,7 @@ public class User {
     private String password;
 
     private String username;
+    private String userPic;
 
     public Integer getId() {
 
@@ -46,5 +47,9 @@ public class User {
                 ", username='" + username + '\'' +
                 ", password=" + password +
                 '}';
+    }
+
+    public void setUserPic(String fileName) {
+        userPic = fileName;
     }
 }
