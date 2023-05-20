@@ -23,7 +23,7 @@ public abstract class UserService {
     abstract boolean register(User user);
 
 
-    @Autowired
+//    @Autowired
     private UserDao userMapper; // Spring 注入 UserMapper 对象
     /**
      * 用户注册，记录用户信息并处理上传的图片
